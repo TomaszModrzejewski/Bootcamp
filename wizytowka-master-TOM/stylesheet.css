@@ -1,0 +1,118 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Lato
+}
+
+/* Pozycjonowanie */
+
+.profile-card {
+  width: 400px;
+  max-width: calc(100vw - 10px);
+  height: 550px;
+  margin: 10px 5px 10px 5px;
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .7);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  align-items: center;
+}
+
+img {
+  padding: 1px;
+  background-color: #666;
+  margin: 2rem 2rem 1.5rem 2rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('assets/hacker.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.head, .links {
+  text-align: center;
+}
+
+.content {
+  padding: 5% 10%;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+  }
+
+.head {
+  font-size: 120%
+}
+
+.about {
+  text-align: justify;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Linki kontaktowe */
+
+ul {
+  list-style-type: none;
+  
+}
+
+li {
+  display: inline;
+}
+
+.links {
+  margin-top: 2rem;
+}
+
+.name2 {
+  font-style: italic;
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* zmiany Jarka */
+
+.social-icon {
+  font-size: 35px;
+  color: blue;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.social-icon:hover {
+  color: black;
+}
+
+.name p {
+  padding-bottom: .4rem;
+}
+
+
+
+
+
