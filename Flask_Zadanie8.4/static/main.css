@@ -1,0 +1,18 @@
+.welcome {
+    text-align: center;
+    background-color: grey;
+    font-size: 50px;
+ }
+ 
+.heading {
+    font-size: 50px;
+    color: blue;
+
+}
+.list {
+    font-size: 25px;
+}
+
+body {
+    margin-left: 40px;
+}
