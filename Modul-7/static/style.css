@@ -1,0 +1,137 @@
+body {
+  font-family: Arial; /* Black;*/
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  margin: 0%;
+  border: inset gray 2px;
+}
+
+input,
+textarea {
+  min-height: 300px;
+  width: 96%;
+  font-family: arial;
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-image: linear-gradient(
+    to bottom right,
+    #333333,
+    #444444,
+    #333333,
+    #222222,
+    #333333,
+    #222222,
+    #000000
+  );
+  width: 10%;
+  color: white;
+  font-family: Arial;
+}
+
+.Headline,
+.LeftSide {
+  background-image: linear-gradient(
+    to bottom right,
+    #aa0000,
+    #ff0000,
+    #aa0000,
+    #880000,
+    #aa0000,
+    #880000,
+    #660000,
+    #220000
+  );
+  overflow: hidden;
+  word-wrap: break-word;
+  border: inset gray 3px;
+}
+
+.Headline {
+  line-height: 300%;
+  margin: 1%;
+}
+
+.LeftSide {
+  float: left;
+  width: 20%;
+  min-height: 1000px;
+  margin-left: 1%;
+}
+
+.RightSide {
+  background-image: linear-gradient(
+    to bottom right,
+    #333333,
+    #444444,
+    #333333,
+    #222222,
+    #333333,
+    #222222,
+    #000000
+  );
+  text-align: left;
+  float: right;
+  padding-left: 2%;
+  width: 73%;
+  min-height: 1000px;
+  margin-right: 1%;
+  border: gray inset 3px;
+}
+
+.Formulario,
+.Button {
+  background-color: #333333;
+  background-image: linear-gradient(
+    to bottom right,
+    #333333,
+    #444444,
+    #333333,
+    #222222,
+    #333333,
+    #222222,
+    #000000
+  );
+  margin: 1%;
+  margin-top: 0%;
+  border: gray inset 1px;
+
+  line-height: 30px;
+  font-size: 100%;
+  /*transition: 0.5s;*/
+}
+
+.Formulario {
+  padding-left: 1%;
+  margin-left: 0%;
+}
+
+.Button:hover {
+  background-color: red;
+  background-image: linear-gradient(
+    to bottom right,
+    #aa0000,
+    #ff0000,
+    #aa0000,
+    #880000,
+    #aa0000,
+    #880000,
+    #660000,
+    #220000
+  );
+  border-color: gray;
+  border-style: outset;
+  border-width: 1px;
+}

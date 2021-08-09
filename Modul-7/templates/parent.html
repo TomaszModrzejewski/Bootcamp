@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>Modul7</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!--<link rel="stylesheet" href="./static/style.css">-->
+    {% endblock %}
+</head>
+
+
+
+
+<!--HEADER---------------------------------------------------------------------------------------------------------->
+
+<body>
+    <div class="Headline">
+        <h1>
+            Witaj Na Mojej Stronie Domowej
+        </h1>
+    </div>
+
+
+    <!--LEFT SIDE--------------------------------------------------------------------------------------------------->
+    <div class="LeftSide">
+
+        <img src="{{ url_for('static', filename='Foto/Portret.png') }}">
+
+        <a href="./me">
+            <div class="Button">
+                O MNIE
+            </div>
+        </a>
+
+        <a href="./contact">
+            <div class="Button">
+                KONTAKT
+            </div>
+        </a>
+
+    </div>
+
+
+    <!--RIGHT SIDE-------------------------------------------------------------------------------------------------->
+    <div class="RightSide">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+
+</body>
+
+</html>
