@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 150%;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: auto;
+  margin: 25%;
+  margin-top: 5%;
+  padding: 5%;
+  padding-top: 1%;
+  box-shadow: 3px 3px 3px -3px gray;
+}
