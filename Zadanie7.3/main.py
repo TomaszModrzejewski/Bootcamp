@@ -11,7 +11,7 @@ def generate_business_card(quantity=1):
         bcard = BaseContact(    fake.first_name(),
                                 fake.last_name(),
                                 fake.phone_number(),
-                                fake.email )
+                                fake.email() ) 
 
         business_cards.append(bcard)
 
