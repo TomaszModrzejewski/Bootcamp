@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteka domowa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<h2>Lista książek</h2>
+
+<table>
+    <thead>
+        <th>Tytuł</th>
+        <th>Autor</th>
+        <th>Rok wydania</th>
+        <th>Gatunek</th>
+        <th>Czy przeczytana?</th>
+        <th>Edycja</th>
+    </thead>
+{% for book in books %}
+    <tr>
+        <td>{{ book[1] }}</td>
+        <td>{{ book[2] }}</td>
+        <td> {{book[3] }}</td>
+        <td>{{ book[4] }}</td>
+        <td>{{ book[5] }}</td>
+        <td><a href="/books/{{ book[0] }}">Edytuj</a></td>
+    </tr>
+{% endfor %}
+</table>
+<div>
+    <h2> Dodaj nową książkę: </h2>
+    <form method="POST" action="/books/">
+        {{ form.hidden_tag() }}
+        <table>
+            {% for field in form if field.widget.input_type != 'hidden' %}
+                <tr>
+                    <th>{{ field.label }} {% if field.flags.required %}*{% endif %}</th>
+                    <td>{{ field }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Dodaj">
+    </form>
+</div>
+</body>
+</html>
