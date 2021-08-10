@@ -1,0 +1,23 @@
+{% extends "parent.html" %}
+{% block content %}
+        <h2>
+            Kontakt
+        </h2>
+        <ul>
+            <li>
+                <strong>Mail:</strong> < tomasz.modrzejewski.2021@gmail.com
+            </li>
+            <li>
+                <strong>Telefon:</strong> +48-###-###-###
+            </li>
+        </ul>
+
+        <div class="Formulario">
+            <form method="POST">
+                Wyślij wiadomość: <br>
+                <textarea name="message"></textarea>
+            <Button>Wyślij</Button>
+            </form>
+        </div>
+
+        {% endblock %}
