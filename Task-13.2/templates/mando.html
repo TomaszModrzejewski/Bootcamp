@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of The Mandalorian episodes</title>
+    <style>
+        table, th, tr, td {border: 1px solid black;}
+    </style>
+</head>
+
+<h2>Odcinki:</h2>
+<h3>Źródło - Wikipedia</h3>
+
+<table>
+    <thead>
+    <th>Tytuł</th>
+    <th>Opis</th>
+    <th>Czy obejrzane?</th>
+    </thead>
+{% for episode in episodes %}
+    <tr>
+        <td><a href="/mando/{{ loop.index }}">{{ episode.title }}</a></td>
+        <td>{{ episode.description }}</td>
+        <td>{{ episode.viewed }}</td>
+    </tr>
+{% endfor %}
+</table>
+<div>
+    <h2> Dodaj nowy odcinek: </h2>
+    <form method="POST" action="/mando/">
+        {{ form.hidden_tag() }}
+        <table>
+            {% for field in form if field.widget.input_type != 'hidden' %}
+                <tr>
+                    <th>{{ field.label }} {% if field.flags.required %}*{% endif %}</th>
+                    <td>{{ field }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Save">
+    </form>
+</div>
+</body>
+</html>
