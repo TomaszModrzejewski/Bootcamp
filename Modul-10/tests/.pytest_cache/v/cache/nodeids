@@ -1,0 +1,11 @@
+[
+  "test_get_movie_images.py::test_get_movie_images",
+  "test_get_single_movie.py::test_get_single_movie",
+  "test_get_single_movie_cast.py::test_get_single_movie_cast",
+  "test_homepage.py::test_homepage",
+  "test_views.py::test_homepage[now_playing-200]",
+  "test_views.py::test_homepage[popular-200]",
+  "test_views.py::test_homepage[top_rated-200]",
+  "test_views.py::test_homepage[upcoming-200]",
+  "testy.py::test_get_movies_list"
+]
