@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>
+  Zaloguj się
+</h3>
+
+{% if errors %}
+   {{ errors.username }}
+{% endif %}
+<form action="" method="POST">
+  {{form.hidden_tag()}}
+   <div class="form-group">
+       <label for="title">Login</label>
+       {% if errors and errors.username %}
+           {{ form.username(class_="form-control is-invalid") }}
+       {% else %}
+           {{ form.username(class_="form-control") }}
+       {% endif %}
+       <div class="invalid-feedback">{{ errors.username|join(' ') }}</div>
+
+   </div>
+   <div class="form-group">
+       <label for="body">Hasło</label>
+
+       {% if errors and errors.password %}
+           {{ form.password(class_="form-control is-invalid") }}
+       {% else %}
+           {{ form.password(class_="form-control") }}
+       {% endif %}
+       <div class="invalid-feedback">{{ errors.password|join(' ') }}</div>
+
+   </div>
+   <button type="submit" class="btn btn-primary mt-5">Zaloguj</button>
+</form>
+
+{% endblock %}
